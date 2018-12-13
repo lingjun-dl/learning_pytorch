@@ -2,6 +2,17 @@
 
 This repo is supported by Huawei and SJTU. Many thanks
 
+### training details
+
+update learning rate at every 100 epcoch
+[learning rate decay]
+![learning rate decay with respect to epochs](https://github.com/lingjun-dl/learning_pytorch/blob/master/pytorch/resnet/imgs/learningrate%20decay.png)
+
+The results are as belows:
+![loss and acc](https://github.com/lingjun-dl/learning_pytorch/blob/master/pytorch/resnet/imgs/loss%20and%20acc.png)
+
+
+
 ### To use pretrained model
 please download my model from baidu Drive. Click [here](https://pan.baidu.com/s/1wC-XywvmXhwkqmlr4DQNDQ)
 
@@ -45,3 +56,4 @@ parser.add_argument('-outpdir', type=str, default='./ckpt', help='where to save 
 ```
 
 #### Best performance: 93.40%
+![accuracy](https://github.com/lingjun-dl/learning_pytorch/blob/master/pytorch/resnet/imgs/accs.PNG)

@@ -5,6 +5,7 @@ This repo is supported by Huawei and SJTU. Many thanks
 ### training details
 
 update learning rate at every 100 epcoch:
+
 ![learning rate decay with respect to epochs](https://github.com/lingjun-dl/learning_pytorch/blob/master/pytorch/resnet/imgs/learningrate%20decay.png)
 
 The results are as belows:

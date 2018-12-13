@@ -25,6 +25,8 @@ or
 python3 main.py -ngpu 1 -train False -download True
 ```
 
+### You can also train it in your computer
+
 to train with your own parameters:
 ```python
 python3 main.py -ngpu 1 -dataroot yourrootdir -lr 0.01 -epochs 200 -decay 0.98 -outpdir "dir you want to save your training log and model"

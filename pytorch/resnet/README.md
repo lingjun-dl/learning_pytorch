@@ -4,17 +4,19 @@ This repo is supported by Huawei and SJTU. Many thanks
 
 ### training details
 
-update learning rate at every 100 epcoch:
+- Learning rate
+
+I updated learning rate at every 100 epcoch(you can make it flexible by your own):
 
 ![learning rate decay with respect to epochs](https://github.com/lingjun-dl/learning_pytorch/blob/master/pytorch/resnet/imgs/learningrate%20decay.png)
 
-The results are as belows:
+The results are shown as belows:
 ![loss and acc](https://github.com/lingjun-dl/learning_pytorch/blob/master/pytorch/resnet/imgs/loss%20and%20acc.png)
 
 
 
 ### To use pretrained model
-You can download my model from baidu Drive. Click [here](https://pan.baidu.com/s/1hehR8cs22lVSeA2Pr3cPIQ)
+You can download my model from `Baidu Drive`. Click [here](https://pan.baidu.com/s/1hehR8cs22lVSeA2Pr3cPIQ)
 
 run in command:
 ```python
@@ -25,12 +27,13 @@ or
 python3 main.py -ngpu 1 -train False -download True
 ```
 
-### You can also train it in your computer
+### You can also train it in your own computer
 
 to train with your own parameters:
 ```python
 python3 main.py -ngpu 1 -dataroot yourrootdir -lr 0.01 -epochs 200 -decay 0.98 -outpdir "dir you want to save your training log and model"
 ```
+*Suggest epochs need to be larger than 240*
 
 or you can set other parameters refer to params below
 

@@ -14,7 +14,7 @@ The results are as belows:
 
 
 ### To use pretrained model
-please download my model from baidu Drive. Click [here](https://pan.baidu.com/s/1wC-XywvmXhwkqmlr4DQNDQ)
+You can download my model from baidu Drive. Click [here](https://pan.baidu.com/s/1hehR8cs22lVSeA2Pr3cPIQ)
 
 run in command:
 ```python
@@ -57,5 +57,5 @@ parser.add_argument('-train', type=bool, default=True, help='Train or test')
 parser.add_argument('-outpdir', type=str, default='./ckpt', help='where to save your model')
 ```
 
-#### Best performance: 93.40%
-![accuracy](https://github.com/lingjun-dl/learning_pytorch/blob/master/pytorch/resnet/imgs/accs.PNG)
+### Best performance: 93.44%
+![accuracy](https://github.com/lingjun-dl/learning_pytorch/blob/master/pytorch/resnet/imgs/results.PNG)

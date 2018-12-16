@@ -46,11 +46,16 @@ def loadCifar10(dataroot, download=True,
 	# splite data into three parts
 	valid_dataset = []
 	for i in range(valid_size):
-	    valid_dataset.append(test_dataset[i])
-
-	train_dataloader = torch.utils.data.DataLoader(cifar10data,
+	    valid_dataset.append(train_dataset[i])
+	
+	train_dataset = []
+	for i in range(valid_size,50000):
+	    train_dataset.append(train_dataset[i])
+	
+	
+	train_dataloader = torch.utils.data.DataLoader(train_dataset,
 	                                        batch_size=train_batch_size,
-	                                        shuffle=True, num_workers=workers)
+	                                        shuffle=True, num_workers=workers)	
 	valid_dataloader = torch.utils.data.DataLoader(valid_dataset,
 	                                        batch_size=valid_batch_size,
 	                                        shuffle=False, num_workers=workers)
